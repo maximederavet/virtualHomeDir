@@ -1,6 +1,7 @@
 # Compilateur et flags
 CC = gcc
 CFLAGS = -Wall -Wextra -g -Iinclude
+# Le flag -Iinclude indique au compilateur de chercher les fichiers d'en-tête dans le dossier 'include'
 
 # Dossiers
 OBJ_DIR = obj
@@ -58,4 +59,4 @@ clean:
 	@echo "Nettoyage..."
 	rm -rf $(OBJ_DIR) $(BIN_DIR)
 
-.PHONY: all clean create_dirs
+.PHONY: all clean create_dirs   
